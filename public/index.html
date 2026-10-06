@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>the merge</title>
+<meta name="description" content="A single, continuously evolving collective artwork. Every contribution morphs the canvas toward itself through a quantum transform.">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header>
+  <h1>the merge</h1>
+  <p class="standfirst">
+    One canvas. Every contribution morphs it toward itself through a quantum
+    transform, at a strength decided by a fresh quantum measurement. What goes
+    in is listed; what comes out stops being separable by eye.
+  </p>
+</header>
+
+<main>
+  <section class="stage" aria-labelledby="stage-heading">
+    <h2 id="stage-heading" class="sr-only">The current canvas</h2>
+
+    <div class="stage-inner">
+      <figure class="canvas" id="canvas-figure" data-state="loading">
+      <img id="canvas-img" alt="The current state of the collective canvas">
+      <div class="placeholder" id="placeholder">
+        <span id="placeholder-text">Loading…</span>
+      </div>
+      </figure>
+
+      <div class="controls" id="controls">
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+        <div class="actions" id="actions"></div>
+        <input type="file" id="file" accept="image/*" hidden>
+      </div>
+    </div>
+  </section>
+
+  <aside class="ledger" aria-labelledby="ledger-heading">
+    <h2 id="ledger-heading">Contributions <span class="count" id="count"></span></h2>
+    <ol id="list"></ol>
+    <button type="button" class="link" id="more" hidden>Load more</button>
+    <p class="note">
+      Originals are kept and shown here. The canvas itself is a deterministic
+      interpolation, not one-way destruction — so this list, not the artwork, is
+      where the transparency lives.
+    </p>
+  </aside>
+</main>
+
+<script type="module" src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+.env.local
+node_modules
+scratch/
+.vercel
+.env*
+.DS_Store
